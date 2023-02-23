@@ -31,6 +31,17 @@ we can add the endepoint as api/flights/:id and it will fetch us all the details
 
 | POST | /api/flights | This endpoint should allow users to add new flights to the system. | 201 |
 we can add the endepoint as api/flights with the post method and it will post the details of the flight with status code 201
+we can use this template for adding new flight
+{
+    "airline": "Indigo",
+    "flightNo": "129",
+    "departure": "Goa",
+    "arrival": "Bangalore",
+    "departureTime": "0500",
+    "arrivalTime": "0800",
+    "seats": "24",
+    "price": "3999"
+}
 
 | PUT / PATCH | /api/flights/:id | This endpoint should allow users to update the details of a specific flight identified by its ID. | 204 |
 we can add the endepoint as api/flights/:id with the patch method and it will update the details of the flight with id as id data from the database with status code 201
